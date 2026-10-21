@@ -1,0 +1,29 @@
+artifacts = ["/app/report.json"]
+
+[task]
+name = "terminal-bench/babel-compact-format"
+
+[metadata]
+author_name = "Vasu Kapoor"
+difficulty_explanation = "The task looks like a five-line call into a well-known library, and that is the trap. The babel build vendored at /app/babel is 2.11.0, whose _get_compact_format performs the compaction division in binary floating point: number / (magnitude / (10 ** (pattern.count(chr(48)) - 1))). The divisor is itself computed as a float, so the value handed to round() carries representation error and the final significant digit comes out wrong in both directions - 12345 renders as 12.35K rather than 12.34K, and 9950 renders as 9.9K rather than 10K. Nothing about the output looks broken; every figure is a plausible compact string, and the six non-discriminating figures round correctly, so a spot check passes. The library is relocated to /app with PYTHONPATH=/app made authoritative, so the reflexive fix of upgrading the package silently does nothing - the relocated copy still wins on the import path, and the agent sees a successful install followed by unchanged output. Passing requires noticing that a trusted library is wrong on a specific numeric edge, locating the float division inside the vendored source, and correcting it, rather than trusting the formatter."
+solution_explanation = "Read /app/figures.json, format each value with babel.numbers.format_compact_decimal at the given fraction_digits for en_US, and write the label-to-string mapping to /app/report.json. The work is in making the vendored babel correct first. Confirm the import resolves to /app/babel rather than site-packages, then patch _get_compact_format in /app/babel/numbers.py the way upstream 2.12.0 did: coerce the incoming number to decimal.Decimal so the arithmetic is exact, and make the inner divisor an integer division (magnitude // (10 ** (pattern.count(chr(48)) - 1))) so the scaling factor is exact rather than a float approximation. With both changes the rounding is performed on exact values and every figure lands on the correct digit."
+verification_explanation = "The verifier runs in a separate image that never contains the task environment, and reads only the declared artifact /app/report.json. It checks the compact string for all nine figures against values computed from the corrected formatter, requiring exact string equality. Five of the nine (revenue, signups, sessions, impressions, clicks) are discriminating: a submission built on unpatched babel 2.11.0 produces a different final digit on those and fails, while the remaining four are correct either way and confirm the agent did the ordinary work. Grading is all-or-nothing across the full mapping, and the verifier additionally rejects a malformed or non-object report."
+category = "Software"
+subcategory = "internationalization"
+tags = ["debugging", "python", "internationalization", "numeric-formatting", "dependency-analysis"]
+expert_time_estimate_hours = 1.0
+
+[verifier]
+timeout_sec = 600.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 18000.0
+
+[environment]
+build_timeout_sec = 6000.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+network_mode = "public"

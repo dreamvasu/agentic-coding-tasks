@@ -1,0 +1,311 @@
+[
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-1",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B1",
+          "started_at": "2026-05-10T08:00:00Z",
+          "ended_at": "2026-05-10T11:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-2",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B9",
+          "started_at": "2026-05-10T10:00:00Z",
+          "ended_at": "2026-05-10T11:00:00Z"
+        },
+        {
+          "event_id": "e2",
+          "berth": "B1",
+          "started_at": "2026-05-10T12:00:00Z",
+          "ended_at": "2026-05-10T13:00:00Z"
+        },
+        {
+          "event_id": "e3",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10T16:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-3",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B9",
+          "started_at": "2026-05-10T12:00:00Z",
+          "ended_at": "2026-05-10T13:00:00Z"
+        },
+        {
+          "event_id": "e2",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10T15:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-4",
+      "events": [
+        {
+          "event_id": "e9",
+          "berth": "B1",
+          "started_at": "2026-05-10T10:00:00Z",
+          "ended_at": "2026-05-10T11:00:00Z"
+        },
+        {
+          "event_id": "e10",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10T15:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "2.5000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "8886.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-5",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10T16:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-6",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [
+        "B1"
+      ],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-7",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10 16:00:00"
+        }
+      ]
+    }
+  },
+  {
+    "contract": {
+      "contract_id": "CP",
+      "commencement": "2026-05-10T09:00:00Z",
+      "allowed_laytime_hours": "24.0000",
+      "demurrage_rate_per_day": "18500.00",
+      "despatch_rate_per_day": "9250.00",
+      "counted_berths": [],
+      "working_periods": [
+        {
+          "from": "2026-05-10T06:00:00Z",
+          "to": "2026-05-10T22:00:00Z"
+        }
+      ],
+      "excluded_stoppages": [
+        {
+          "from": "2026-05-10T12:00:00Z",
+          "to": "2026-05-10T13:00:00Z",
+          "reason": "weather"
+        }
+      ]
+    },
+    "events": {
+      "port_call_id": "pc-8",
+      "events": [
+        {
+          "event_id": "e1",
+          "berth": "B1",
+          "started_at": "2026-05-10T14:00:00Z",
+          "ended_at": "2026-05-10T16:00:00Z"
+        }
+      ]
+    }
+  }
+]

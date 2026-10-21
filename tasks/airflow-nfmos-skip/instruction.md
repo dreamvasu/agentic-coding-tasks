@@ -1,0 +1,3 @@
+I could use a hand tracking down a scheduler issue in Airflow. We have a DAG that expands a task group dynamically, and on a fresh run one of the tasks inside the group is marked `skipped` even though its upstream, which also lives inside the group, completes successfully. Clearing the run and executing it again doesn't seem to reproduce it, which is what's throwing me. There's a minimal reproduction at `/app/data/repro_dag.py`.
+
+Could you look into what the scheduler is doing here and fix it at the root, rather than working around this one DAG? It should hold for any mapped task group that hits this, and I'd like regression tests that fail on the current code and pass once it's fixed. The source is at `/app`. Thanks.

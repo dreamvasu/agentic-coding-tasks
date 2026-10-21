@@ -1,0 +1,24 @@
+{
+  "stations": [
+    {
+      "waypoint_id": "T001",
+      "site": "TIE-ALPHA",
+      "lat_deg": -24.4,
+      "lon_deg": 19.8,
+      "altitude_km": 0.9,
+      "obs_date": "2024-07-30",
+      "magnetic_bearing_deg": 277.72,
+      "leg_km": 90
+    },
+    {
+      "waypoint_id": "T002",
+      "site": "TIE-BRAVO",
+      "lat_deg": -21.2,
+      "lon_deg": 25.6,
+      "altitude_km": 0.9,
+      "obs_date": "2024-07-30",
+      "magnetic_bearing_deg": 18.54,
+      "leg_km": 56
+    }
+  ]
+}

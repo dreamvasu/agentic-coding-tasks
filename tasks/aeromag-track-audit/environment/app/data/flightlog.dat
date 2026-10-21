@@ -1,0 +1,18 @@
+;; Legacy aeromagnetic flight log (pre-2016 export)
+;; Fixed-field record layout, one waypoint per line:
+;;   cols  1-6    waypoint id
+;;   cols  7-16   site
+;;   cols 17-19   latitude degrees      cols 20-21 minutes   cols 22-27 seconds
+;;   col  28      latitude hemisphere (N/S)
+;;   cols 29-32   longitude degrees     cols 33-34 minutes   cols 35-40 seconds
+;;   col  41      longitude hemisphere (E/W)
+;;   cols 42-47   altitude km
+;;   cols 48-57   observation date (YYYY-MM-DD)
+;;   cols 58-62   leg km
+;;   cols 63-68   magnetic bearing degrees
+W003  KALAHARI  0261038.496S00200626.388E001.262024-08-1200028008.91
+W006  KALAHARI  0270259.352S00200528.824E001.842024-08-1200128203.53
+W011  NAMAQUA   0301305.484S00174358.908E002.022024-09-0300065119.06
+W014  NAMAQUA   0293120.460S00165701.584E000.602024-09-0300030268.24
+W019  OKAVANGO  0202125.884S00225327.816E000.712024-10-2100139335.99
+W022  OKAVANGO  0203344.316S00235017.376E001.682024-10-2100039149.16

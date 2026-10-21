@@ -1,0 +1,29 @@
+{
+  "port_call_id": "PC-M",
+  "events": [
+    {
+      "event_id": "e1",
+      "berth": "B9",
+      "started_at": "2026-05-10T06:00:00Z",
+      "ended_at": "2026-05-10T08:00:00Z"
+    },
+    {
+      "event_id": "e2",
+      "berth": "B9",
+      "started_at": "2026-05-10T12:00:00Z",
+      "ended_at": "2026-05-10T13:00:00Z"
+    },
+    {
+      "event_id": "e3",
+      "berth": "B9",
+      "started_at": "2026-05-10T08:00:00Z",
+      "ended_at": "2026-05-10T10:00:00Z"
+    },
+    {
+      "event_id": "e4",
+      "berth": "B1",
+      "started_at": "2026-05-10T14:00:00Z",
+      "ended_at": "2026-05-10T18:00:00Z"
+    }
+  ]
+}

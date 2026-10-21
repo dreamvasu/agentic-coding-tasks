@@ -1,0 +1,13 @@
+location_id,zone,instant_utc
+L01,Europe/London,2025-06-15T09:00:00Z
+L02,Europe/Berlin,2025-06-15T09:00:00Z
+L03,America/New_York,2025-06-15T09:00:00Z
+L04,America/Chicago,2025-01-15T09:00:00Z
+L05,Asia/Tokyo,2025-06-15T09:00:00Z
+L06,Asia/Kolkata,2025-06-15T09:00:00Z
+L07,Australia/Sydney,2025-01-15T09:00:00Z
+L08,Africa/Nairobi,2025-06-15T09:00:00Z
+L09,America/Sao_Paulo,2025-06-15T09:00:00Z
+L10,Pacific/Auckland,2025-06-15T09:00:00Z
+L11,Asia/Shanghai,2025-06-15T09:00:00Z
+L12,Europe/Berlin,2025-12-15T09:00:00Z

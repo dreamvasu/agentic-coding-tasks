@@ -1,0 +1,35 @@
+{
+  "port_call_id": "PC-88",
+  "events": [
+    {
+      "event_id": "e1",
+      "berth": "B1",
+      "started_at": "2026-03-04T06:00:00Z",
+      "ended_at": "2026-03-04T18:00:00Z"
+    },
+    {
+      "event_id": "e2",
+      "berth": "B2",
+      "started_at": "2026-03-04T18:00:00Z",
+      "ended_at": "2026-03-04T21:00:00Z"
+    },
+    {
+      "event_id": "e3",
+      "berth": "B3",
+      "started_at": "2026-03-05T07:00:00Z",
+      "ended_at": "2026-03-05T20:45:00Z"
+    },
+    {
+      "event_id": "e4",
+      "berth": "B1",
+      "started_at": "2026-03-06T06:30:00Z",
+      "ended_at": null
+    },
+    {
+      "event_id": "e5",
+      "berth": "B1",
+      "started_at": "2026-03-06T21:00:00Z",
+      "ended_at": "2026-03-06T23:00:00Z"
+    }
+  ]
+}

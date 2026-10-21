@@ -1,0 +1,29 @@
+artifacts = ["/app/laytime", "/app/bin", "/app/proving-calls.json"]
+
+[task]
+name = "terminal-bench/repair-laytime-statement"
+
+[metadata]
+author_name = "Vasu Kapoor"
+difficulty_explanation = "The contract in /app/LAYTIME.md is complete and in the box, so nothing here is unknowable; the difficulty is covering it. The shipped engine reports the segments and stops: it has no settlement stage at all, so the agent writes that half itself rather than correcting a wrong version of it. Two clauses inside that work carry the difficulty. Excluded time must be attributed to the first condition a segment fails, and segments can fail more than one, so the natural construction of one counter per condition double counts; the sample port call contains no segment that fails two conditions, so an agent testing against what it can see cannot tell the two constructions apart. Money must round half away from zero, which both Python round() and decimal ROUND_HALF_EVEN get wrong on an exact half-cent, and no despatch figure the agent can compute from the sample lands on one. The remaining fault is the difference between an absent key and a null value. Grading is whole-document, so any one of these left wrong scores zero."
+solution_explanation = "Write the settlement stage the engine is missing: sum hours over the countable segments, attribute every other segment to the first condition in section 3 that it fails, settle the allowance against the countable total, and quantize with ROUND_HALF_UP at four places for hours and two for money. Then reject an event whose ended_at key is absent while still treating an explicit null as an event that is merely running. Roughly sixty lines added to one module."
+verification_explanation = "The verifier runs the agent CLI over twelve held-out port calls and compares the emitted statement to a frozen golden for each, with grading all or nothing. Beside the whole-document comparison every clause carries a spot assertion a reviewer can derive from LAYTIME.md by hand: the excluded buckets on a capture where every excluded segment fails exactly two conditions, a conservation check that every segment is counted once, a despatch figure landing on an exact half-cent so the rounding mode is observable, the interval id format, the ordering of two lines whose id order and time order disagree, the emitted field order, three malformed inputs that must be rejected with nothing written, and a large port call that enforces the cost clause."
+category = "Software"
+subcategory = "Data processing"
+tags = ["python", "debugging", "decimal", "contract-compliance"]
+expert_time_estimate_hours = 3
+
+[verifier]
+timeout_sec = 600.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 18000.0
+
+[environment]
+build_timeout_sec = 6000.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+network_mode = "public"

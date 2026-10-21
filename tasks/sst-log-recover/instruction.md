@@ -1,0 +1,9 @@
+A cache node kept its objects in an embedded LevelDB store at `/app/data/store`. The node crashed part way through a write and the store is damaged: opening it with the LevelDB engine returns an older payload for several objects instead of the one most recently written, and standard recovery tooling does not return the current payloads either. The object bytes themselves were never overwritten, so the payload for every object you must recover still physically exists inside the files under `/app/data/store`.
+
+The store directory is live state rather than an inert copy, and it is volatile, so be careful how you access it.
+
+Recover the current payload for each of the following twelve object ids and write it as raw bytes to `/app/output/<id>.bin`, for example id 0042 to `/app/output/0042.bin`. The ids are 0007, 0019, 0042, 0063, 0104, 0137, 0205, 0268, 0301, 0358, 0412 and 0470, and an object's key in the store is `obj:` followed by its id, such as `obj:0042`. The `/app/output` directory already exists. Write nothing but the payload bytes to each file, and recover only these ids.
+
+"Current" means the payload an uncorrupted copy of this store would return for that key once every write that was durably recorded has been applied. A write that was still in flight when the node crashed was never durably recorded and does not count, and where several versions of an object's payload are present, the current one is the version written by the most recent durably recorded write. Every listed id exists and is not deleted in the current state.
+
+The container has no external copy of this data. Success is judged only on the recovered bytes: for each id the SHA-256 of `/app/output/<id>.bin` must equal the SHA-256 of that id's true current payload. Each file is verified independently and byte for byte.

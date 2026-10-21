@@ -1,0 +1,6 @@
+- name: alpha
+  tier: free
+  limit: 10
+- name: beta
+  tier: pro
+  limit: 100

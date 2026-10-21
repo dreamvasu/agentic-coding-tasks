@@ -1,0 +1,11 @@
+{ "figures": [
+  {"label": "revenue",      "value": 12345,   "fraction_digits": 2},
+  {"label": "signups",      "value": 3450,    "fraction_digits": 1},
+  {"label": "sessions",     "value": 9950,    "fraction_digits": 1},
+  {"label": "impressions",  "value": 11350,   "fraction_digits": 1},
+  {"label": "clicks",       "value": 125450,  "fraction_digits": 1},
+  {"label": "errors",       "value": 999,     "fraction_digits": 0},
+  {"label": "reach",        "value": 1500000, "fraction_digits": 2},
+  {"label": "installs",     "value": 2750,    "fraction_digits": 1},
+  {"label": "refunds",      "value": 48500,   "fraction_digits": 1}
+] }

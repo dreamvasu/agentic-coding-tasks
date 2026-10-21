@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "port_call_id": "PC-D",
+  "lines": [
+    {
+      "interval_id": "e1|0",
+      "berth": "B1",
+      "started_at": "2026-05-10T08:00:00Z",
+      "ended_at": "2026-05-10T12:00:00Z",
+      "hours": "4.0000",
+      "countable": true
+    },
+    {
+      "interval_id": "e2|0",
+      "berth": "B1",
+      "started_at": "2026-05-10T13:30:00Z",
+      "ended_at": "2026-05-10T17:00:00Z",
+      "hours": "3.5000",
+      "countable": true
+    }
+  ],
+  "countable_hours": "7.5000",
+  "excluded_hours": {
+    "outside_working_period": "0.0000",
+    "inside_stoppage": "0.0000",
+    "uncounted_berth": "0.0000",
+    "before_commencement": "0.0000"
+  },
+  "allowed_hours": "8.0000",
+  "time_saved_hours": "0.5000",
+  "demurrage_hours": "0.0000",
+  "despatch_due": "185.13",
+  "demurrage_due": "0.00"
+}

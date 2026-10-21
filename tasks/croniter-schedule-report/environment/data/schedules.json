@@ -1,0 +1,8 @@
+{
+  "billing_eom29": "0 0 29 * *",
+  "quarter_hours": "15 */2 * * *",
+  "weekday_open":  "0 9 * * 1-5",
+  "month_start":   "0 0 1 * *",
+  "sat_backup":    "30 6 * * 6",
+  "midmonth":      "0 12 15 * *"
+}

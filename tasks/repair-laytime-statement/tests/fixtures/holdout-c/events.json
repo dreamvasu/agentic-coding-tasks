@@ -1,0 +1,17 @@
+{
+  "port_call_id": "PC-C",
+  "events": [
+    {
+      "event_id": "e9",
+      "berth": "B1",
+      "started_at": "2026-05-10T09:00:00Z",
+      "ended_at": "2026-05-10T11:00:00Z"
+    },
+    {
+      "event_id": "e10",
+      "berth": "B1",
+      "started_at": "2026-05-10T14:00:00Z",
+      "ended_at": "2026-05-10T15:00:00Z"
+    }
+  ]
+}

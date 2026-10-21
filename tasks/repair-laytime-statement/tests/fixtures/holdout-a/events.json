@@ -1,0 +1,23 @@
+{
+  "port_call_id": "PC-A",
+  "events": [
+    {
+      "event_id": "e1",
+      "berth": "B1",
+      "started_at": "2026-05-10T05:00:00Z",
+      "ended_at": "2026-05-10T16:00:00Z"
+    },
+    {
+      "event_id": "e2",
+      "berth": "B2",
+      "started_at": "2026-05-10T16:00:00Z",
+      "ended_at": "2026-05-10T20:00:00Z"
+    },
+    {
+      "event_id": "e3",
+      "berth": "B3",
+      "started_at": "2026-05-11T07:00:00Z",
+      "ended_at": "2026-05-11T12:00:00Z"
+    }
+  ]
+}

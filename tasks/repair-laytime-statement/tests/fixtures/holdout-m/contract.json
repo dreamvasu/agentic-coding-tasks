@@ -1,0 +1,23 @@
+{
+  "contract_id": "CP-M",
+  "commencement": "2026-05-10T10:00:00Z",
+  "allowed_laytime_hours": "24.0000",
+  "demurrage_rate_per_day": "18500.00",
+  "despatch_rate_per_day": "9250.00",
+  "counted_berths": [
+    "B1"
+  ],
+  "working_periods": [
+    {
+      "from": "2026-05-10T08:00:00Z",
+      "to": "2026-05-10T20:00:00Z"
+    }
+  ],
+  "excluded_stoppages": [
+    {
+      "from": "2026-05-10T12:00:00Z",
+      "to": "2026-05-10T13:00:00Z",
+      "reason": "weather"
+    }
+  ]
+}
